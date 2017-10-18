@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cian comments tracking",
+  "description": "Save all the comments history based on ELMSID, no matter how many times offer is re-created",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.cian.ru/sale/flat/favorites*"],
+      "js": ["js/jquery-3.2.1.js", "js/sorageOperations.js", "js/favouritesComments.js"]
+    },
+    {
+      "matches": ["https://www.cian.ru/cat.php*"],
+      "js": ["js/jquery-3.2.1.js", "js/catComments.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}

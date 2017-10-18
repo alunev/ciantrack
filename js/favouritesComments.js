@@ -18,7 +18,7 @@ $(".offer-item").each(function (i) {
             return commentElem.text();
         },
         function setComment(comment) {
-            return commentElem.text('Все коменты для EMLS ID ' + emlsId + " : " + comment);
+            commentElem.text('Все коменты для EMLS ID ' + emlsId + " : " + comment);
         }
     )
 })

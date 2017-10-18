@@ -8,11 +8,11 @@
   "content_scripts": [
     {
       "matches": ["https://www.cian.ru/sale/flat/favorites*"],
-      "js": ["js/jquery-3.2.1.js", "js/sorageOperations.js", "js/favouritesComments.js"]
+      "js": ["js/jquery-3.2.1.js", "js/storageOperations.js", "js/favouritesComments.js"]
     },
     {
       "matches": ["https://www.cian.ru/cat.php*"],
-      "js": ["js/jquery-3.2.1.js", "js/catComments.js"]
+      "js": ["js/jquery-3.2.1.js", "js/storageOperations.js", "js/catComments.js"]
     }
   ],
 
